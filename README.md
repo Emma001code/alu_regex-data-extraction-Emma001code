@@ -16,10 +16,10 @@ This script is designed to validate different types of data (emails, phone numbe
 
 ## How to Use
 
-Clone or download this repository.
-Open the index.js file in your preferred code editor.
-Modify or add new data to the arrays (emails, phoneNumbers, creditCards, currencyAmounts).
-Run the script in a JavaScript environment (e.g., Node.js or in the browser console).
+- Clone or download this repository.
+- Open the index.js file in your preferred code editor.
+- Modify or add new data to the arrays (emails, phoneNumbers, creditCards, currencyAmounts).
+- Run the script in a JavaScript environment (e.g., Node.js or in the browser console).
 
 ## Code Breakdown
 
