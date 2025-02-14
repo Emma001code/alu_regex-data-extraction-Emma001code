@@ -23,21 +23,21 @@ Run the script in a JavaScript environment (e.g., Node.js or in the browser cons
 
 # Code Breakdown
 
-# 1.Regex patterns
+### 1.Regex patterns
 
-- Email REGEX: Matches valid email formats.
-- PHONE REGEX: Matches phone numbers in multiple formats (e.g., (123) 456-7890, 123-456-7890).
-- CREDITCARDREGEX: Matches valid credit card numbers with separators like spaces or hyphens.
-- CURRENCYREGEX: Matches currency amounts, with support for commas and two decimal places.
+- EmailRegex: Matches valid email formats.
+- PhoneRegex: Matches phone numbers in multiple formats (e.g., (123) 456-7890, 123-456-7890).
+- CreditcardRegex: Matches valid credit card numbers with separators like spaces or hyphens.
+- CurrencyRegex: Matches currency amounts, with support for commas and two decimal places.
 
-# 2.Arrays:
+### 2.Arrays:
 
 - Emails: Contains sample email addresses for validation.
 - Phonenumbers: Contains sample phone numbers in various formats.
 - Creditcards: Contains sample credit card numbers.
 - Cryptocurrencies: Contains sample currency amounts with different formats.
 
-# 3.Selected Patterns:
+### 3.Selected Patterns:
 
 - The script maps the regex patterns to their corresponding data arrays. The validation process runs for each array with its respective regex.
   extractMatches Function:
@@ -45,7 +45,7 @@ Run the script in a JavaScript environment (e.g., Node.js or in the browser cons
 - Loops through the selected patterns and tests each item in the arrays against the corresponding regex.
   Outputs whether each entry matches the regex pattern.
 
-# Example outputs
+### Example outputs
 
 Checking emails:
 user@example.com - Match: true
