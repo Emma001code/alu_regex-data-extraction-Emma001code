@@ -2,7 +2,7 @@
 
 This script is designed to validate different types of data (emails, phone numbers, credit card numbers, and currency amounts) using regular expressions (regex). It takes predefined arrays of sample data, checks them against corresponding regex patterns, and logs whether each entry matches its respective pattern.
 
-## features
+## Features
 
 - Validates email addresses using a standard regex pattern.
 - Validates phone numbers in various formats, including with parentheses, hyphens, and dots.
