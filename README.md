@@ -47,18 +47,6 @@ This script is designed to validate different types of data (emails, phone numbe
 
 ### Example outputs
 
-### Explanation:
-
-- The entire output is wrapped in triple backticks (```), which creates a code block in Markdown.
-- `plaintext` right after the first set of backticks ensures that the text is formatted exactly as it appears, without additional styling.
-- This will appear in your README with the exact format you need when viewed on platforms like GitHub or GitLab.
-
-When you include this in your README, it will look like this:
-
----
-
-## Example Output
-
 ```plaintext
 Checking emails:
 user@example.com - Match: true
