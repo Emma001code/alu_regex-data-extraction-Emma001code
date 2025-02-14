@@ -8,6 +8,7 @@ const currencyRegex = /^\$\d{1,3}(?:,\d{3})*(\.\d{2})?$/;
 const emails = [
     "user@example.com",
     "firstname.lastname@company.co.uk",
+    "chibuikeemmanuel879@gmail.com",
     "invalid-email@"
 ];
 
