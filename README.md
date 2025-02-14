@@ -23,7 +23,7 @@ This script is designed to validate different types of data (emails, phone numbe
 
 ## Code Breakdown
 
-### 1.Regex patterns
+### 1.Regex patterns:
 
 - EmailRegex: Matches valid email formats.
 - PhoneRegex: Matches phone numbers in multiple formats (e.g., (123) 456-7890, 123-456-7890).
