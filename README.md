@@ -60,6 +60,7 @@ Phone Numbers:
 
 - (123) 456-7890
 - 123-456-7890
+- 212.456.7890
 
 Credit Card Numbers:
 
