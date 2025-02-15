@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 // Regex patterns for validating different types of data
-const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9]+(?:\.[A-Za-z0-9]+)*\.[A-Za-z]{2,}\b/g
 const phoneRegex = /\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g;
 const creditCardRegex = /\b(?:\d{4}[-\s]){3}\d{4}\b/g;
 const currencyRegex = /\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?/g;
