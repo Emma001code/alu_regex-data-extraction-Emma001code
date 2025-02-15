@@ -30,7 +30,7 @@ This project demonstrates the use of Regular Expressions (Regex) to extract spec
 - Navigate to the project directory, eg: "cd alu_regex-data-extraction-Emma001code"
 - Install node.js if you dont have it.
 - create an input file; create a file named sample.txt in the project directory.
-- After creating the file then add this text, "Hey, you can reach Emmanuel at chibuikeemmanuel879@gmail.com or ngwoke@emma.com or e.gwoke@company.co.uk.
+- After creating the file then add this text, "Hey, you can reach Emmanuel at chibuikeemmanuel879@gmail.com or ngwoke@emma.com or e.ngwoke@company.co.uk.
   For more inquiries, call us at (123) 456-7890 or 123-456-7890.
   Your payment of $1,234.56 was successful, thank you for working with us. Alternatively, the amount $19.99 is pending.
   My credit card number is 1234-5678-9012-3456.
@@ -51,7 +51,7 @@ This project demonstrates the use of Regular Expressions (Regex) to extract spec
 Emails:
 chibuikeemmanuel879@gmail.com
 ngwoke@emma.com
-e.gwoke@company.co.uk
+e.ngwoke@company.co.uk
 
 Phone Numbers:
 (123) 456-7890
@@ -71,8 +71,8 @@ Times:
 
 ## Author
 
-Emmanuel Chibuikem Ngwoke
-Linkedin: www.linkedin.com/in/emmanuelngwoke
+- Emmanuel Chibuikem Ngwoke
+- Linkedin: www.linkedin.com/in/emmanuelngwoke
 
 ## Acknowledgement
 
