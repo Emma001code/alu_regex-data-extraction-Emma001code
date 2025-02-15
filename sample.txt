@@ -5,4 +5,4 @@ My credit card number is 1234-5678-9012-3456.
 Here's another customer's credit card: 1234 5678 9012 3456.
 Incorrect phone number: 1234567.
 The dev. meeting in ALU is scheduled at 22:30.
-The valetine party starts at 2:00 PM.
+The valentine party starts at 2:00 PM.
