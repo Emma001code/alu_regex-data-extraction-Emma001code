@@ -37,7 +37,7 @@ This project demonstrates the use of Regular Expressions (Regex) to extract spec
   Here's another customer's credit card: 1234 5678 9012 3456.
   Incorrect phone number: 1234567.
   The dev. meeting in ALU is scheduled at 14:30.
-  The valetine party starts at 2:30 PM. "
+  The valetine party starts at 2:00 PM. "
 
 - Run the code: nodejs regex.js
 
