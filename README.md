@@ -1,13 +1,23 @@
-# Regex Pattern Matching
+# Regex Data extraction
 
-This script is designed to validate different types of data (emails, phone numbers, credit card numbers, and currency amounts) using regular expressions (regex). It takes predefined arrays of sample data, checks them against corresponding regex patterns, and logs whether each entry matches its respective pattern.
+## project overview
+
+This project demonstrates the use of Regular Expressions (Regex) to extract specific types of data from a text file. The program reads input data from a file named "sample.txt" and applies regex patterns to extract and display the following types of information:
+
+## Data
+
+- Email addresses
+- phone numbers
+- credit card numbers
+- currency amounts
+- Time [12 hour and 24 hour format]
 
 ## Features
 
-- Validates email addresses using a standard regex pattern.
-- Validates phone numbers in various formats, including with parentheses, hyphens, and dots.
-- Validates credit card numbers with optional spaces or hyphens between groups of four digits.
-- Validates currency amounts with optional commas for thousands and two decimal places for cents.
+- It accurately reads data from an input file using Node.js "fs" module.
+- It handles missing or incorrectly spelt formatted data effectively.
+- Brings out the sorted information to the console on a structured format
+- Accurate usage of regex pattern to extract specific data types accurately: Email, phone numbers, credit card numbers, currency amounts and Time.
 
 ## Pre-requisites
 
@@ -17,58 +27,52 @@ This script is designed to validate different types of data (emails, phone numbe
 ## How to Use
 
 - Clone or download this repository.
-- Open the index.js file in your preferred code editor.
-- Modify or add new data to the arrays (emails, phoneNumbers, creditCards, currencyAmounts).
-- Run the script in a JavaScript environment (e.g., Node.js or in the browser console).
+- Navigate to the project directory, eg: "cd alu_regex-data-extraction-YourUsername"
+- Install node.js if you dont have it.
+- createan input file: create a file named sample.txt in the project directory and add the following text to the file: Hey, you can reach Emmanuel at chibuikeemmanuel879@gmail.com or ngwoke@emma.com or e.gwoke@company.co.uk.
+  For more inquiries, call us at (123) 456-7890 or 123-456-7890.
+  Your payment of $1,234.56 was successful, thank you for working with us. Alternatively, the amount $19.99 is pending.
+  My credit card number is 1234-5678-9012-3456.
+  Here's another customer's credit card: 1234 5678 9012 3456.
+  Incorrect phone number: 1234567.
+  The dev. meeting in ALU is scheduled at 14:30.
+  The valetine party starts at 2:30 PM. "
 
-## Code Breakdown
+- Run the code: nodejs regex.js
 
-### 1.Regex patterns:
+## Technology Used
 
-- EmailRegex: Matches valid email formats.
-- PhoneRegex: Matches phone numbers in multiple formats (e.g., (123) 456-7890, 123-456-7890).
-- CreditcardRegex: Matches valid credit card numbers with separators like spaces or hyphens.
-- CurrencyRegex: Matches currency amounts, with support for commas and two decimal places.
+- Node.js: For file system implementation and also running the file.
+- Regex: For pattern matching and data withdrawal.
 
-### 2.Arrays:
+## Output Expectation
 
-- Emails: Contains sample email addresses for validation.
-- Phonenumbers: Contains sample phone numbers in various formats.
-- Creditcards: Contains sample credit card numbers.
-- Cryptocurrencies: Contains sample currency amounts with different formats.
+Emails:
+chibuikeemmanuel879@gmail.com
+ngwoke@emma.com
+e.gwoke@company.co.uk
 
-### 3.Selected Patterns:
+Phone Numbers:
+(123) 456-7890
+123-456-7890
 
-- The script maps the regex patterns to their corresponding data arrays. The validation process runs for each array with its respective regex.
-  extractMatches Function:
+Credit Card Numbers:
+1234-5678-9012-3456
+1234 5678 9012 3456
 
-- Loops through the selected patterns and tests each item in the arrays against the corresponding regex.
-  Outputs whether each entry matches the regex pattern.
+Currency Amounts:
+$1,234.56
+$19.99
 
-### Example outputs
+Times:
+14:30
+2:30 PM
 
-```plaintext
-Checking emails:
-user@example.com - Match: true
-firstname.lastname@company.co.uk - Match: true
-invalid-email@ - Match: false
+## Author
 
-Checking phoneNumbers:
-(123) 456-7890 - Match: true
-123-456-7890 - Match: true
-123.456.7890 - Match: true
-4567890 - Match: false
+Emmanuel Chibuikem Ngwoke
+Linkedin: www.linkedin.com/in/emmanuelngwoke
 
-Checking creditCards:
-1234 5678 9012 3456 - Match: true
-1234-5678-9012-3456 - Match: true
-1234567890123456 - Match: false
+## Acknowledgement
 
-Checking currencyAmounts:
-$19.99 - Match: true
-$1,234.56 - Match: true
-$1234.56 - Match: false
-$1,234,567.89 - Match: true
-123.45 - Match: false
-
-```
+- Thanks to ALU for this challenging and at the same time exciting Regex challenge.

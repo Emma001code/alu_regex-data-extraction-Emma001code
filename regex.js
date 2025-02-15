@@ -1,57 +1,56 @@
+// Importing the 'fs' module for file system implementations
+const fs = require('fs');
+
 // Regex patterns for validating different types of data
-const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-const phoneRegex = /^(?:\(\d{3}\)\s?|\d{3}[-.])\d{3}[-.]\d{4}$/;
-const creditCardRegex = /^(?:\d{4}[-\s]){3}\d{4}$/;
-const currencyRegex = /^\$\d{1,3}(?:,\d{3})*(\.\d{2})?$/;
+const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+const phoneRegex = /\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g;
+const creditCardRegex = /\b(?:\d{4}[-\s]){3}\d{4}\b/g;
+const currencyRegex = /\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?/g;
+const timeRegex = /\b((1[0-2]|0?[1-9]):[0-5][0-9]\s?(AM|PM)|([01]?[0-9]|2[0-3]):[0-5][0-9])\b/g;
 
-// Sample data arrays to be validated
-const emails = [
-    "user@example.com",
-    "firstname.lastname@company.co.uk",
-    "chibuikeemmanuel879@gmail.com",
-    "invalid-email@"
-];
 
-const phoneNumbers = [
-    "(123) 456-7890",
-    "123-456-7890",
-    "123.456.7890",
-    "4567890"
-];
-
-const creditCards = [
-    "1234 5678 9012 3456",
-    "1234-5678-9012-3456",
-    "1234567890123456"
-];
-
-const currencyAmounts = [
-    "$19.99",
-    "$1,234.56",
-    "$1234.56",
-    "$1,234,567.89",
-    "123.45"
-];
-
-//Define an array that maps the data arrays to their respective regex patterns
-const selectedPatterns = [
-    { name: "emails", data: emails, regex: emailRegex },
-    { name: "phoneNumbers", data: phoneNumbers, regex: phoneRegex },
-    { name: "creditCards", data: creditCards, regex: creditCardRegex },
-    { name: "currencyAmounts", data: currencyAmounts, regex: currencyRegex }
-];
-
-// Function to extract and test matches for each of the pattern
-function extractMatches(patterns) {
-    for (const pattern of patterns) {
-        const { name, data, regex } = pattern;
-        console.log(`\nChecking ${name}:`);
-        data.forEach(item => {
-            const isMatch = regex.test(item);
-            console.log(`${item} - Match: ${isMatch}`);
-        });
+// Read the sample.txt file 
+fs.readFile('./sample.txt', 'utf8', (err, data) => {
+    if (err) {
+            // Handles the error if the file cant be read
+        console.error('Error reading file:', err.message);
+        return;
     }
-}
+    console.log(`content of file: ${data}\n`)
+    // Applying and extracting data match using the regex patterns
+    
+    const emails = data.match(emailRegex) || [];
 
-// Call the function with the selected patterns
-extractMatches(selectedPatterns);
+    const phoneNumbers = data.match(phoneRegex) || [];
+
+    const creditCards = data.match(creditCardRegex) || [];
+
+    const currencyAmounts = data.match(currencyRegex) || [];
+
+    const times = data.match(timeRegex) || [];
+
+    // Display result of the extracted information 
+    console.log('Emails :');
+
+    console.log(emails.length ? emails.join('\n') : 'None Found');
+
+
+    console.log('\nPhone Numbers :');
+
+    console.log(phoneNumbers.length ? phoneNumbers.join('\n') : 'None Found');
+
+
+    console.log('\nCredit Card Numbers:');
+
+    console.log(creditCards.length ? creditCards.join('\n') : 'None Found');
+
+
+    console.log('\nCurrency Amounts :');
+
+    console.log(currencyAmounts.length ? currencyAmounts.join('\n') : 'None Found');
+
+    
+    console.log('\nTimes:');
+
+    console.log(times.length ? times.join('\n') : 'None Found');
+});
