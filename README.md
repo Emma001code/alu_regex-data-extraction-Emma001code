@@ -1,4 +1,4 @@
-# Regex Data extraction
+# Regex Data Extraction Tool
 
 ## project overview
 
@@ -27,9 +27,10 @@ This project demonstrates the use of Regular Expressions (Regex) to extract spec
 ## How to Use
 
 - Clone or download this repository.
-- Navigate to the project directory, eg: "cd alu_regex-data-extraction-YourUsername"
+- Navigate to the project directory, eg: "cd alu_regex-data-extraction-Emma001code"
 - Install node.js if you dont have it.
-- createan input file: create a file named sample.txt in the project directory and add the following text to the file: Hey, you can reach Emmanuel at chibuikeemmanuel879@gmail.com or ngwoke@emma.com or e.gwoke@company.co.uk.
+- create an input file; create a file named sample.txt in the project directory.
+- After creating the file then add this text, "Hey, you can reach Emmanuel at chibuikeemmanuel879@gmail.com or ngwoke@emma.com or e.gwoke@company.co.uk.
   For more inquiries, call us at (123) 456-7890 or 123-456-7890.
   Your payment of $1,234.56 was successful, thank you for working with us. Alternatively, the amount $19.99 is pending.
   My credit card number is 1234-5678-9012-3456.
@@ -75,4 +76,4 @@ Linkedin: www.linkedin.com/in/emmanuelngwoke
 
 ## Acknowledgement
 
-- Thanks to ALU for this challenging and at the same time exciting Regex challenge.
+- All thanks to ALU for this challenging and at the same time exciting Regex challenge.
