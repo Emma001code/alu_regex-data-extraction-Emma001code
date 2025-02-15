@@ -10,14 +10,14 @@ This project demonstrates the use of Regular Expressions (Regex) to extract spec
 - phone numbers
 - credit card numbers
 - currency amounts
-- Time [12 hour and 24 hour format]
+- Times [12 hour and 24 hour format]
 
 ## Features
 
 - It accurately reads data from an input file using Node.js "fs" module.
 - It handles missing or incorrectly spelt formatted data effectively.
 - Brings out the sorted information to the console on a structured format
-- Accurate usage of regex pattern to extract specific data types accurately: Email, phone numbers, credit card numbers, currency amounts and Time.
+- Accurate usage of regex pattern to extract specific data types accurately: Email, phone numbers, credit card numbers, currency amounts and Times.
 
 ## Pre-requisites
 
@@ -49,25 +49,30 @@ This project demonstrates the use of Regular Expressions (Regex) to extract spec
 ## Output Expectation
 
 Emails:
-chibuikeemmanuel879@gmail.com
-ngwoke@emma.com
-e.ngwoke@company.co.uk
+
+- chibuikeemmanuel879@gmail.com
+- ngwoke@emma.com
+- e.ngwoke@company.co.uk
 
 Phone Numbers:
-(123) 456-7890
-123-456-7890
+
+- (123) 456-7890
+- 123-456-7890
 
 Credit Card Numbers:
-1234-5678-9012-3456
-1234 5678 9012 3456
+
+- 1234-5678-9012-3456
+- 1234 5678 9012 3456
 
 Currency Amounts:
-$1,234.56
-$19.99
+
+- $1,234.56
+- $19.99
 
 Times:
-22:30
-2:00 PM
+
+- 22:30
+- 2:00 PM
 
 ## Author
 
