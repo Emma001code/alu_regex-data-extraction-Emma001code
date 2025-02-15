@@ -17,8 +17,8 @@ fs.readFile('./sample.txt', 'utf8', (err, data) => {
         return;
     }
     console.log(`content of file: ${data}\n`)
+
     // Applying and extracting data match using the regex patterns
-    
     const emails = data.match(emailRegex) || [];
 
     const phoneNumbers = data.match(phoneRegex) || [];
@@ -49,7 +49,7 @@ fs.readFile('./sample.txt', 'utf8', (err, data) => {
 
     console.log(currencyAmounts.length ? currencyAmounts.join('\n') : 'None Found');
 
-    
+
     console.log('\nTimes:');
 
     console.log(times.length ? times.join('\n') : 'None Found');
